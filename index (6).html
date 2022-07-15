@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最伟大的作品</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(243,230,241);
+        }
+        .shell{
+            width: 90%;
+            height: 700px;
+            display: flex;
+        }
+        .box{
+            flex: 1;
+            overflow: hidden;
+            transition: .5s;
+            margin: 0 20px;
+            box-shadow: 10px 10px 20px rgba(0,0, 0, 0.5);
+            border-radius: 20px;
+            border: 10px solid #fff;
+             background-color: #fff;
+        }
+        .box>img{
+            width: 200%;
+            height: 85%;
+            object-fit: cover;
+            transition: .5s;
+        }
+        .box>span{
+            font: 200 45px;
+            text-align: center;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box:hover{
+            flex-basis: 40%;
+        }
+        .box:hover>img{
+            width: 100%;
+            height: 85%;
+        }
+        span{
+            font: 700 30px Microsoft YaHei;
+        }
+        a{
+            text-decoration: none;
+            color:rgb(243,230,241);
+            text-shadow: 3px 3px 7px rgba(250, 100, 70, 0.9);
+        }
+    </style>
+</head>
+<body>
+   <div class="shell">
+    <div class="box">
+        <img src="./还在流浪.jpg">
+    <span>
+        <a href="./还在流浪.html" target="_blank">还在流浪</a>
+    </span>
+</div> 
+<div class="box">
+    <img src="./说好不哭.jpg">
+<span>
+    <a href="./说好不哭.html" target="_blank">说好不哭</a>
+</span>
+</div> 
+ <div class="box">
+    <img src="./最伟大的作品1.jpg">
+<span> 
+    <a href="./GREATEST WORKS OF ART.html" target="_blank">最伟大的作品</a>
+</span>
+</div> 
+<div class="box">
+    <img src="./mojito.jpg">
+<span>
+    <a href="./mojito.html" target="_blank">mojito</a>
+</span>
+</div> 
+<div class="box">
+    <img src="./等你下课.jpg">
+<span>
+    <a href="./等你下课.html" target="_blank">等你下课</a>
+</span>
+</div> 
+</div> 
+</body>
+</html>
